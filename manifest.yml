@@ -1,0 +1,6 @@
+applications:
+- name: affective-mirroring
+  command: npm start
+  path: .
+  memory: 512M
+  instances: 1
