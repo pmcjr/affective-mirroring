@@ -99,6 +99,10 @@
 1. View the application online at the app URL.  
 For example: https://my-app-name.mybluemix.net
 
+## Dataset
+
+1. The Lexical Dictionary used in this classifier can be found in *training/NRC-Portugues.csv* file
+
 
 [docs]: https://console.bluemix.net/docs/services/conversation/index.html
 [docs_landing]: (https://console.bluemix.net/docs/services/conversation/index.html)
