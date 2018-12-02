@@ -47,7 +47,7 @@
 
     ```
 
-    Example *.env* file that configures the application for a Watson Assistant service instance hosted in the US South region:
+    Example *credentials.json* file that configures the application for a Watson Assistant service instance hosted in the US South region:
 
     ```
     {
