@@ -20,6 +20,7 @@ var express = require('express'); // app server
 var bodyParser = require('body-parser'); // parser for post requests
 var AssistantV1 = require('watson-developer-cloud/assistant/v1'); // watson sdk
 var emotion_analyzer = require('./classifier/emotion_analyzer.js');
+var credentials = require('./credentials.json');
 var app = express();
 
 console.log(emotion_analyzer);
@@ -32,8 +33,8 @@ app.use(bodyParser.json());
 
 var assistant = new AssistantV1({
   version: '2018-07-10',
-  username: '<username>',
-  password: '<password>'
+  username: credentials.service_username,
+  password: credentials.service_password
 });
 
 emotion_analyzer.load_csv();
@@ -81,7 +82,7 @@ app.post('/api/message', function (req, res) {
     req.body.context.emotion = emotion;
   }
 
-  var workspace = '<workspace_id>';
+  var workspace = credentials.workspace_id;
 
   var payload = {
     workspace_id: workspace,
