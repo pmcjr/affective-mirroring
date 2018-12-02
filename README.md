@@ -20,13 +20,10 @@
 
 2. Click the **Import workspace** icon in the Watson Assistant service tool. Specify the location of the workspace JSON file in your local copy of the app project:
 
-                            (for the affective chatbot)
-    `<project_root>/assistant_workspaces/skill-Affective-Mirroring---Emotions.json`
 
-                                    or
+    `<project_root>/assistant_workspaces/skill-Affective-Mirroring---Emotions.json` (for the affective chatbot)
 
-                            (for the neutral chatbot)
-    `<project_root>/assistant_workspaces/skill-Affective-Mirroring---Neutral.json`                    
+    `<project_root>/assistant_workspaces/skill-Affective-Mirroring---Neutral.json`  (for the neutral chatbot)                 
 
 
 3. Select **Everything (Intents, Entities, and Dialog)** and then click **Import**. The affective chatbot workspace is created.
