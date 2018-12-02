@@ -1,0 +1,619 @@
+{
+  "name": "Affective Mirroring - Emotions",
+  "intents": [],
+  "entities": [],
+  "language": "pt-br",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-09-20"
+    }
+  },
+  "description": "",
+  "dialog_nodes": [
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Não se preocupe. Nosso objetivo é sempre melhorar o nosso atendimento aos clientes. Nos procure da próxima vez que garantiremos uma experiência muito melhor do que foi esta."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_33_1543485517027",
+      "metadata": {},
+      "conditions": "$emotion == 'Anger'",
+      "dialog_node": "node_41_1543485517028",
+      "previous_sibling": "node_40_1543485517028"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Lamentamos fortemente o ocorrido. Por favor, entre em contato conosco para que possamos agora mesmo reparar o ocorrido. Nosso objetivo é a sua satisfação."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_33_1543485517027",
+      "metadata": {},
+      "conditions": "$emotion == 'Disgust'",
+      "dialog_node": "node_40_1543485517028",
+      "previous_sibling": "node_39_1543485517028"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Nos desculpe. Não esperávamos que a interação fosse ocorrer desta forma. Por favor, não deixe de nos visitar uma próxima vez e garantiremos que estes acontecimentos não vão se repetir."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_33_1543485517027",
+      "metadata": {},
+      "conditions": "$emotion == 'Fear'",
+      "dialog_node": "node_39_1543485517028",
+      "previous_sibling": "node_38_1543485517028"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Obrigado pela sua participação."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_33_1543485517027",
+      "metadata": {},
+      "conditions": "$emotion == 'Neutral'",
+      "dialog_node": "node_42_1543485517028",
+      "previous_sibling": "node_41_1543485517028"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "É isso aí! Vamos continuar sempre te surpreendendo. Até mais."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_33_1543485517027",
+      "metadata": {},
+      "conditions": "$emotion == 'Surprise'",
+      "dialog_node": "node_36_1543485517028",
+      "previous_sibling": "node_35_1543485517028"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Estamos aqui sempre para melhor atendê-lo. Até a próxima!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_33_1543485517027",
+      "metadata": {},
+      "conditions": "$emotion == 'Trust'",
+      "dialog_node": "node_35_1543485517028",
+      "previous_sibling": "node_34_1543485517028"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Lamentamos o ocorrido. Vamos entrar em contato com você para entender melhor os acontecimentos e repará-los."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_33_1543485517027",
+      "metadata": {},
+      "conditions": "$emotion == 'Sadness'",
+      "dialog_node": "node_38_1543485517028",
+      "previous_sibling": "node_36_1543485517028"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Muito obrigado meu consagrado! Vá na fé e esperar suas futuras compras."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_33_1543485517027",
+      "metadata": {},
+      "conditions": "$emotion == 'Joy'",
+      "dialog_node": "node_34_1543485517028"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Minha nossa! Estamos envergonhados de saber disto. Anotamos seu contato e vamos reparar este feito. Por favor, diga-me sobre a entrega do produto."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_13_1543484800641",
+      "metadata": {},
+      "conditions": "$emotion == 'Disgust'",
+      "dialog_node": "node_20_1543484800642",
+      "previous_sibling": "node_19_1543484800642"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Que pena! Mas não fique triste. Estamos aqui para aprender e melhorar nossos produtos. Me diga o que achou da entrega."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_13_1543484800641",
+      "metadata": {},
+      "conditions": "$emotion == 'Sadness'",
+      "dialog_node": "node_18_1543484800642",
+      "previous_sibling": "node_16_1543484800642"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Não se exalte meu amigo. Estamos com uma gama de promoções justamente para agradar a todos! Me diga agora o que achou da entrega do produto."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_13_1543484800641",
+      "metadata": {},
+      "conditions": "$emotion == 'Anger'",
+      "dialog_node": "node_21_1543484800642",
+      "previous_sibling": "node_20_1543484800642"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Sua satisfação é sempre nossa meta. Por favor, me diga o que achou sobre a entrega do produto."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_13_1543484800641",
+      "metadata": {},
+      "conditions": "$emotion == 'Trust'",
+      "dialog_node": "node_15_1543484800642",
+      "previous_sibling": "node_14_1543484800642"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Não tenha medo de nos dizer o que acha. Estamos aqui para aprender e melhorar sempre a qualidade dos nossos produtos. Por favor, me diga como foi a entrega do produto em sua casa."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_13_1543484800641",
+      "metadata": {},
+      "conditions": "$emotion == 'Fear'",
+      "dialog_node": "node_19_1543484800642",
+      "previous_sibling": "node_18_1543484800642"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Ótimo! Nossa intenção é sempre surpreendê-lo positivamente. Conte-me agora sobre a entrega do produto."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_13_1543484800641",
+      "metadata": {},
+      "conditions": "$emotion == 'Surprise'",
+      "dialog_node": "node_16_1543484800642",
+      "previous_sibling": "node_15_1543484800642"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "O que pode me dizer sobre o tempo de entrega?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_13_1543484800641",
+      "metadata": {},
+      "conditions": "$emotion == 'Neutral'",
+      "dialog_node": "node_22_1543484800642",
+      "previous_sibling": "node_21_1543484800642"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Maravilha! Então atingimos nosso objetivo. O que achou do tempo de entrega do produto na sua residência?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_13_1543484800641",
+      "metadata": {},
+      "conditions": "$emotion == 'Joy'",
+      "dialog_node": "node_14_1543484800642",
+      "previous_sibling": "node_23_1543485353429"
+    },
+    {
+      "type": "standard",
+      "title": "Futuras promoções",
+      "output": {},
+      "parent": "node_13_1543484800641",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "true",
+      "dialog_node": "node_23_1543485353429",
+      "digress_out": "allow_all"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Mil perdões! De forma alguma a nossa intenção era desagradá-lo. Por favor, nos conte os motivos que levaram a achar isso da nossa promoção. Queremos saber para melhor atendê-lo."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1543484681825",
+      "metadata": {},
+      "conditions": "$emotion == 'Disgust'",
+      "dialog_node": "node_10_1543484739639",
+      "previous_sibling": "node_9_1543484731391"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Wow! Que bom que gostou! Estamos pensando em realizar mais promoções como essa. Me diga o que achou do sabor e da qualidade da pizza!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1543484681825",
+      "metadata": {},
+      "conditions": "$emotion == 'Surprise'",
+      "dialog_node": "node_7_1543484718098",
+      "previous_sibling": "node_5_1543484700672"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Fico muito feliz que tenha gostado da nossa promoção. Estamos sempre melhorando para levar o melhor sabor até a sua casa. Vamos lá, me diga o que achou do sabor e da qualidade da pizza!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1543484681825",
+      "metadata": {},
+      "conditions": "$emotion == 'Joy'",
+      "dialog_node": "node_4_1543484691693",
+      "previous_sibling": "node_13_1543484800641"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Nossa. Não esperava que fosse lhe causar este transtorno. Pode me dar mais informações sobre o sabor e a qualidade dos produtos que lhe enviamos?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1543484681825",
+      "metadata": {},
+      "conditions": "$emotion == 'Fear'",
+      "dialog_node": "node_9_1543484731391",
+      "previous_sibling": "node_8_1543484725013"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Que pena que não gostou da nossa promoção. Por favor, nos diga o que não lhe agradou para melhorar nossos padrões."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1543484681825",
+      "metadata": {},
+      "conditions": "$emotion == 'Sadness'",
+      "dialog_node": "node_8_1543484725013",
+      "previous_sibling": "node_7_1543484718098"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Por favor, acrescente sua opinião sobre o sabor e a qualidade do produto."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1543484681825",
+      "metadata": {},
+      "conditions": "$emotion == 'Neutral'",
+      "dialog_node": "node_12_1543484758028",
+      "previous_sibling": "node_11_1543484748371"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Ótimo! Vamos seguir sempre fazendo promoções como esta para lhe agradar. Conte-me mais sobre o que achou do sabor e da qualidade do produto."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1543484681825",
+      "metadata": {},
+      "conditions": "$emotion == 'Trust'",
+      "dialog_node": "node_5_1543484700672",
+      "previous_sibling": "node_4_1543484691693"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Pode ficar tranquilo! Lamento saber que nossa promoção lhe causou transtorno! Pode nos dizer o que achou do sabor e da qualidade do produto para que possamos melhorar a forma de atendê-lo?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1543484681825",
+      "metadata": {},
+      "conditions": "$emotion == 'Anger'",
+      "dialog_node": "node_11_1543484748371",
+      "previous_sibling": "node_10_1543484739639"
+    },
+    {
+      "type": "standard",
+      "title": "Entrega",
+      "output": {},
+      "parent": "node_3_1543484681825",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "true",
+      "dialog_node": "node_13_1543484800641",
+      "digress_out": "allow_all"
+    },
+    {
+      "type": "standard",
+      "title": "Qualidade e sabor",
+      "output": {},
+      "parent": "Bem-vindo",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "true",
+      "dialog_node": "node_3_1543484681825",
+      "digress_out": "allow_all"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Não era isso que gostaríamos que tivesse acontecido. Vamos reparar este erro com certeza. Por favor, para finalizar, diga-me o que lhe agradaria em relação a futuras promoções."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_23_1543485353429",
+      "metadata": {},
+      "conditions": "$emotion == 'Fear'",
+      "dialog_node": "node_29_1543485353430",
+      "previous_sibling": "node_28_1543485353430"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Que tipo de nova promoção lhe agradaria?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_23_1543485353429",
+      "metadata": {},
+      "conditions": "$emotion == 'Neutral'",
+      "dialog_node": "node_32_1543485353430",
+      "previous_sibling": "node_31_1543485353430"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Muito bom ouvir isso de você. Para finalizar meu amigo, nos diga quais os tipos de promoção que espera para o futuro."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_23_1543485353429",
+      "metadata": {},
+      "conditions": "$emotion == 'Joy'",
+      "dialog_node": "node_24_1543485353430",
+      "previous_sibling": "node_33_1543485517027"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Não esperávamos que esta experiência fosse tão negativa para você. Para que possamos reparar este cenário, nos diga o que espera para futuras promoções."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_23_1543485353429",
+      "metadata": {},
+      "conditions": "$emotion == 'Disgust'",
+      "dialog_node": "node_30_1543485353430",
+      "previous_sibling": "node_29_1543485353430"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Aí sim hein! Superando as expectativas. Conte-me mais sobre futuras promoções que gostaria da gente."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_23_1543485353429",
+      "metadata": {},
+      "conditions": "$emotion == 'Surprise'",
+      "dialog_node": "node_26_1543485353430",
+      "previous_sibling": "node_25_1543485353430"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Infelizmente não atingimos o que esperávamos com você em relação a esta promoção. Nos desculpe! Diga-me quais os tipos de promoções que espera para o futuro, assim podemos repara essa má experiência."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_23_1543485353429",
+      "metadata": {},
+      "conditions": "$emotion == 'Sadness'",
+      "dialog_node": "node_28_1543485353430",
+      "previous_sibling": "node_26_1543485353430"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Então atingimos nosso objetivo com maestria! Continuaremos mantendo estes padrões de qualidade para melhor atendê-lo. Quais outras promoções você espera da gente?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_23_1543485353429",
+      "metadata": {},
+      "conditions": "$emotion == 'Trust'",
+      "dialog_node": "node_25_1543485353430",
+      "previous_sibling": "node_24_1543485353430"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Entendo. A entrega, mesmo que realizada por terceiros, é a nossa responsabilidade. As devidas ações serão tomadas para que isto não se repita. Gostaria de lhe fazer apenas mais uma pergunta. A respeito de futuras promoções, o que lhe agradaria?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_23_1543485353429",
+      "metadata": {},
+      "conditions": "$emotion == 'Anger'",
+      "dialog_node": "node_31_1543485353430",
+      "previous_sibling": "node_30_1543485353430"
+    },
+    {
+      "type": "standard",
+      "title": "Finalização",
+      "output": {},
+      "parent": "node_23_1543485353429",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "true",
+      "dialog_node": "node_33_1543485517027",
+      "digress_out": "allow_all"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "text": {
+          "values": [
+            "Eu não entendi. Você pode tentar reformular a frase.",
+            "Você pode reformular sua afirmação? Eu não estou entendendo.",
+            "Eu não entendi o sentido."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Opinião sobre a promoção",
+      "output": {
+        "text": {
+          "values": [
+            "Olá! Você experimentou nossa promoção e comprou uma pizza especial tamanho família que acompanha um refrigerante. Pode me dizer o que achou da nossa promoção?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    }
+  ],
+  "workspace_id": "2b17f22e-b19a-4d43-a215-6ceb30d65433",
+  "counterexamples": [],
+  "learning_opt_out": false,
+  "status": "Available"
+}

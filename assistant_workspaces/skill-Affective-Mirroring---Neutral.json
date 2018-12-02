@@ -1,0 +1,116 @@
+{
+  "name": "Affective Mirroring - Neutral",
+  "intents": [],
+  "entities": [],
+  "language": "pt-br",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-09-20"
+    }
+  },
+  "description": "",
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Futuras promoções",
+      "output": {
+        "text": {
+          "values": [
+            "Que tipo de nova promoção lhe agradaria?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1543488542648",
+      "metadata": {},
+      "conditions": "true",
+      "dialog_node": "node_3_1543488575207"
+    },
+    {
+      "type": "standard",
+      "title": "Entrega",
+      "output": {
+        "text": {
+          "values": [
+            "O que pode me dizer sobre o tempo de entrega?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1543488508595",
+      "metadata": {},
+      "conditions": "true",
+      "dialog_node": "node_2_1543488542648"
+    },
+    {
+      "type": "standard",
+      "title": "Qualidade e sabor",
+      "output": {
+        "text": {
+          "values": [
+            "Por favor, acrescente sua opinião sobre o sabor e a qualidade do produto."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "Bem-vindo",
+      "metadata": {},
+      "conditions": "true",
+      "dialog_node": "node_1_1543488508595"
+    },
+    {
+      "type": "standard",
+      "title": "Finalização",
+      "output": {
+        "text": {
+          "values": [
+            "Obrigado pela sua participação."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1543488575207",
+      "metadata": {},
+      "conditions": "true",
+      "dialog_node": "node_4_1543488611608"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "text": {
+          "values": [
+            "Eu não entendi. Você pode tentar reformular a frase.",
+            "Você pode reformular sua afirmação? Eu não estou entendendo.",
+            "Eu não entendi o sentido."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Opinião sobre a promoção",
+      "output": {
+        "text": {
+          "values": [
+            "Olá! Você experimentou nossa promoção e comprou uma pizza especial tamanho família que acompanha um refrigerante. Pode me dizer o que achou da nossa promoção?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {},
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    }
+  ],
+  "workspace_id": "219071d6-71c2-4717-b110-021071b15f3c",
+  "counterexamples": [],
+  "learning_opt_out": false,
+  "status": "Available"
+}
